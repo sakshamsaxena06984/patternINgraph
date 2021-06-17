@@ -44,7 +44,7 @@ int DFS(vector<vector<char>> &board,int x,int y,int n,int m,int index)
         t_y=y+mov[i][1];//move's
         if(valid(t_x,t_y,n,m)==true and board[t_x][t_y]==word[index] and visited[t_x][t_y]!=1)
         {
-            found=found|DFS(board,t_x,t_y,n,m,index+1); //if you find the codingninjas once time
+            found=found|DFS(board,t_x,t_y,n,m,index+1); 
             
         }
     }
